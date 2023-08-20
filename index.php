@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,82 +10,84 @@
     <link rel="stylesheet" href="style.css">
     
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    <!-- bootstrap linked -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <!-- google fonts linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> 
-        <a href="#" class="brand"><img src="photos/Matcha.png" alt="" width="250"></a>
+    <!-- NAVIGATION BAR -->
+    <div class="navigationbar">
+    <div class="container">
+        <div class="row ">
+            <div class="col" id="col1">
+                <img src="./photos/logo.png" alt="this is a logo">
+                <li><a href="#" class="brand">matchaverse</a></li>
+                
+            </div>
+            <div class="col-6" id="col2">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="pages/products.php">products</a></li>
+                <li><a href="pages/reviews.php">reviews</a></li>
+                <li><a href="pages/faq's.php">faq's</a></li>
 
-        <ul class="navmenu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="products.php">Products</a></li>
-            <li><a href="reviews.php">Reviews</a></li>
-            <li><a href="giftcards.php">Giftcards</a></li>
-        </ul>
-
-        <div class="nav-icon">
-            
-            <a href="account.php"><i class='bx bx-user'></i></a>
-            <a href="account.php"><i class='bx bx-cart'></i></a>
-
-           
-        </div>
-    </header>
-
-    <section class="main-home">
-        <div class="main-text">
-            <h5>Enjoy a much more healthier caffeine.</h5>
-            <p>Matcha, a Japanese green tea powder made from green tea leaves from the Camellia Sinensis plant.<br> This is the same plant that green tea is from. However, matcha is grown and processed different than <br>regular green tea.</p>
-            
-            <div class="main-button">
-                <a href="products.php" class="main-btn"> Shop Now &#8594;</a>
+            </div>
+            <div class="col" id="col3">
+                <li><a href="pages/favourites.php"><i class='bx bx-heart'></i></a></li>
+                <li><a href="pages/account.php"><i class='bx bx-user'></i></a></li>
+                <li><a href=""><i class='bx bx-cart'></i></a></li>
             </div>
         </div>
+    </div>
+    </div>
+
+
+    <!-- LANDING PAGE -->
+
+    <!-- FIRST DIV -->
+    <div class="first_div">
+            <div class="motto">
+                <p >
+                    Fuel your day: <br>
+                    Matcha-powered <br>
+                    awesomeness!
+                </p>
+                <a href=""><p>Shop Now</p></a>
+                
+            </div>    
+    </div>
         
-        <!-- <div class="down-arrow">
-            <a href="#trending" class="down"> <i class='bx bx-down-arrow-alt'></i></a>
-        </div> -->
-    </section>
-    
+    <!-- SECOND DIV -->
 
     <!-- categories products -->
 
-    <section class="collection-products" id="trending">
-        <div class="center-text">
-            <h2>Collections</h2>
-        </div>
-
-        <div class="products">
-            <div class="row">
-                <div class="col-3">
+    <div class="collection-products">
+        <div class="second_div">
+            <div class="img">
                     <img src="photos/spoon.jpg" alt="This is photo of a spoon.">
-                </div>
-                <div class="col-3">
-                    <img src="photos/whisk.jpg" alt="This is a photo of a wooden whisk"></div>
-                <div class="col-3">
-                    <img src="photos/powder.jpg" alt="This is a photo of a powder.">
-                </div>
-                </div>
             </div>
-        </div>       
-    </section>
+            <div class="img">
+                    <img src="photos/whisk.jpg" alt="This is a photo of a wooden whisk" >
+            </div>
+            <div class="img">
+                    <img src="photos/powder.jpg" alt="This is a photo of a powder.">
+            </div>
+        </div>
+    </div>
+   
 
     <!-- Featured Collections -->
+    <div class="featured_collections4">
+        <div class="center-text">
+            <h2>Featured Products</h2>
+        </div>
 
-    <section class="shop-container">
-            <div class="center-text">
-                <h2>Featured Products</h2>
-
-            </div>
         <!-- content -->
         <div class="shop-content">
             <!-- box 1 -->
@@ -94,19 +97,17 @@
                 </div>
                 
                 <img src="photos/glass jar mug.jpg" alt="" class="product-image">
-                <div class="heart-icon">
-                    <a href="account.html"><i class="bx bx-heart"></i></a>
-                </div>
-                <div class="rating">
+                
+                <div class="rating" id="text">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star-half' ></i>
                     <i class='bx bx-star'></i>
                 </div>
-                <h2 class="production-title">Glass Jar Mug</h2>
-                <span class="price">₱ 145.00</span>
-                <a href="account.html"><i class="bx bx-shopping-bag add-cart"></i></a>
+                <h2 class="production-title" id="text">Glass Jar Mug</h2>
+                <span class="price" id="text">₱ 145.00</span>
+                <a href="account.html" id="text"><i class="bx bx-shopping-bag add-cart"></i></a>
                 
             </div>
 
@@ -119,7 +120,7 @@
                 
                 <img src="photos/ceremonial.jpg" alt="" class="product-image">
                 
-                <div class="rating">
+                <div class="rating" id="text">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -128,9 +129,9 @@
                     
                     
                 </div>
-                <h2 class="production-title">Ceremonial Matcha Powder</h2>
-                <span class="price">₱ 120.00 per 100g</span>
-                <a href="account.html"><i class="bx bx-shopping-bag add-cart"></i></a>
+                <h2 class="production-title" id="text">Ceremonial Matcha Powder</h2>
+                <span class="price" id="text">₱ 120.00 per 100g</span>
+                <a href="account.html" id="text"><i class="bx bx-shopping-bag add-cart"></i></a>
                 
             </div>
 
@@ -142,7 +143,7 @@
                 
                 <img src="photos/rabbit mug.jpg" alt="" class="product-image">
                 
-                <div class="rating">
+                <div class="rating" id="text">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -150,9 +151,9 @@
                     <i class='bx bxs-star'></i>
                     
                 </div>
-                <h2 class="production-title">Rabbit Mug</h2>
-                <span class="price">₱ 200.00</span>
-                <a href="account.php"><i class="bx bx-shopping-bag add-cart"></i></a>
+                <h2 class="production-title" id="text">Rabbit Mug</h2>
+                <span class="price" id="text">₱ 200.00</span>
+                <a href="account.html" id="text"><i class="bx bx-shopping-bag add-cart"></i></a>
                 
             </div>
             <!-- box 4 -->
@@ -162,38 +163,31 @@
                 </div>
                 
                 <img src="photos/genmaicha.png" alt="" class="product-image">
-               
-                <div class="rating">
+                
+                <div class="rating" id="text">
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bx-star'></i>
                     <i class='bx bx-star'></i>
                 </div>
-                <h2 class="production-title">Genmaicha Powder</h2>
-                <span class="price">₱ 105.00 per 100g</span>
-                <a href="account.php"><i class="bx bx-shopping-bag add-cart"></i></a>
+                <h2 class="production-title" id="text">Genmaicha Powder</h2>
+                <span class="price" id="text">₱ 105.00 per 100g</span>
+                <a href="account.html" id="text"><i class="bx bx-shopping-bag add-cart"></i></a>
                 
-            </div>
-             
-           
-           
+            </div> 
         </div>
 
-
-
-
-
-    </section>
+</div>
 
 <!-- Testimonials -->
 <div class="testimonial">
-    <div class="client-reviews">
+    <div class="center-text">
         <h2>Reviews</h2>
     </div>
     <div class="small-container">
-        <div class="row">
-            <div class="col-3">
+        <div class="myrow">
+            <div class="column">
                 <i class="fa fa-quote-left"></i>
                 <p>I really love matcha. It has a lot of health benefits. I am glad that this website offers quality products.</p>
                 <div class="rating">
@@ -206,7 +200,7 @@
                     <h3>Walt </h3>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="column">
                 <i class="fa fa-quote-left"></i>
                 <p>I didn't expect that these are quality products. They are so much affordable.</p>
                 <div class="rating">
@@ -219,7 +213,7 @@
                     <h3>Kurt</h3>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="column">
                 <i class="fa fa-quote-left"></i>
                 <p>I really love the color red. I wish that next time you will have products in red colors.</p>
                 <div class="rating">
@@ -270,7 +264,11 @@
 <hr>
 <p class="copyright">© 2023 - MATCHAVERSE</p>
 </section>
+
+
     
+  
+   
 
 </body>
 </html>
