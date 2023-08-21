@@ -1,3 +1,44 @@
+<?php 
+function get_products_from_database() {
+  // Connect to the database.
+  $conn = new mysqli('localhost', 'root', '', 'capstone');
+
+  // Check if the connection was successful.
+  if ($conn->connect_error) {
+    die('Connection failed: ' . $conn->connect_error);
+  }
+
+  // Get all of the products from the database.
+  $sql = 'SELECT * FROM products';
+  $result = $conn->query($sql);
+
+  // Check if there were any products returned.
+  if ($result->num_rows > 0) {
+    // Initialize an empty array to store the products.
+    $products = array();
+
+    // Loop through the results and add each product to the array.
+    while ($row = $result->fetch_assoc()) {
+      $products[] = array(
+        'product_id' => $row['product_id'],
+        'product_name' => $row['product_name'],
+        'product_price' => $row['product_price'],
+        'product_quantity' => $row['product_quantity'],
+        'product_image' => $row['product_image'],
+        'product_description' => $row['product_description'],
+      );
+    }
+
+    // Return the array of products.
+    return $products;
+  } else {
+    // Return an empty array if there were no products returned.
+    return array();
+  }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,6 +107,37 @@
 
         <!-- Shop -->
 
+
+
+<h1>Products Page</h1>
+<table>
+<tr>
+<th>Product ID</th>
+<th>Product Name</th>
+<th>Product Price</th>
+<th>Product Quantity</th>
+<th>Product Image</th>
+<th>Product Description</th>
+</tr>
+<?php
+$products = get_products_from_database();
+foreach ($products as $product) {
+?>
+<tr>
+<td><?php echo $product['product_id']; ?></td>
+<td><?php echo $product['product_name']; ?></td>
+<td><?php echo $product['product_price']; ?></td>
+<td><?php echo $product['product_quantity']; ?></td>
+<td><?php echo $product['product_image']; ?></td>
+<td><?php echo $product['product_description']; ?></td>
+</tr>
+<?php
+}
+?>
+</table>
+
+
+        
      <!-- first products row -->         
      <section class="shop-container">
             

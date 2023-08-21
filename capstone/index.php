@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +35,7 @@
         <div class="nav-icon">
             
             <a href="welcome.php"><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
+            <a href="cart.php"><i class='bx bx-cart'></i></a>
 
            
         </div>
