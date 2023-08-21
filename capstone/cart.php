@@ -1,7 +1,26 @@
 <?php
-    session_start();
-    $database_name = "product_details";
-    $con = mysqli_connect("localhost","root","",$database_name);
+    function get_products_from_cart() {
+        // Get the session variable that stores the shopping cart data.
+        $cart = $_SESSION['cart'];
+      
+        // Initialize an empty array to store the products.
+        $products = array();
+      
+        // Loop through the shopping cart data and add each product to the array.
+        foreach ($cart as $key => $value) {
+          $products[] = array(
+            'product_id' => $key,
+            'product_name' => $value['product_name'],
+            'product_price' => $value['product_price'],
+            'product_quantity' => $value['product_quantity'],
+            'product_image' => $value['product_image'],
+            'product_description' => $value['product_description'],
+          );
+        }
+      
+        // Return the array of products.
+        return $products;
+      }
 ?>
 
 <!DOCTYPE html>
@@ -47,12 +66,7 @@
         </div>
     </header>
 
-    <!DOCTYPE html>
-<html>
-<head>
-<title>Cart Page</title>
-</head>
-<body>
+
 <h1>Cart Page</h1>
 <table>
 <tr>
