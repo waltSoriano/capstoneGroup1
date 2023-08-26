@@ -17,31 +17,6 @@
 </head>
 <body>
 
-
-
-        <header>
-            <div class="contents">
-            <div class="brand">
-                <a href="index.php"><img src="imgs/Matcha.png" alt="" width="250"></a>
-            </div>
-                 
-                
-                <nav>
-                    <a href="index.php">Home</a>
-                    <a href="index.php?page=products">Products</a>
-                    <a href="index.php?page=reviews">Reviews</a>
-                    <a href="index.php?page=FAQ">FAQ'S</a>
-                </nav>
-                
-                <div class="link-icons">
-                    <a href="welcome.php"><i class='bx bx-user'></i></a>
-                    <a href="index.php?page=cart">
-						<i class="fas fa-shopping-cart"><span>$num_items_in_cart</span></i>
-					</a>
-                </div>
-            </div>
-        </header>
-
     <section class="account">
         <div class="mycontainer" >
             <div class="row">

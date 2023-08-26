@@ -18,7 +18,7 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h5>Enjoy a much more healthier caffeine.</h5>
             <p>Matcha, a Japanese green tea powder made from green tea leaves from the Camellia Sinensis plant.<br> This is the same plant that green tea is from. However, matcha is grown and processed different than <br>regular green tea.</p>
             <br>
-            <div class="main-button" style="margin-top: 15px;">
+            <div class="main-button" style="margin-top: 15px; padding: 10px 10px;">
                 <a href="index.php?page=products" class="main-btn"> Shop Now &#8594;</a>
             </div>
         </div>
@@ -61,7 +61,7 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <section class="collection-products">
         <div class="center-text">
-            <h2>Collections</h2>
+            <h2 style="font-size: 20px;">Collections</h2>
         </div>
 
         <div class="products">
@@ -83,7 +83,7 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <section class="shop-container">
             <div class="center-text" style="margin-bottom: 20px">
-                <h2>Featured Products</h2>
+                <h2 style="font-size: 20px;">Featured Products</h2>
             </div>
         <!-- content -->
         <div class="shop-content">
@@ -181,47 +181,47 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!-- Testimonials -->
 <div class="testimonial">
     <div class="client-reviews">
-        <h2 style="font-size: 25px; margin-bottom: 10px;">Reviews</h2>
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Reviews</h2>
     </div>
     <div class="small-container">
     <div class="row">
             <div class="col-3">
                 <i class="fa fa-quote-left"></i>
                 <p>Detoxification: Chlorophyll, the green pigment in matcha, support natural detoxification processes in the body by aiding in the elimination of toxins.</p>
-                <div class="rating">
+                <div class="rating" style="text-align: center;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                     <img src="imgs/image1.jpg" alt="This is a photo of a person.">
-                    <h3>Walt </h3>
+                    <h3 style="padding-top: 10px;">Walt </h3>
                 </div>
             </div>
             <div class="col-3">
                 <i class="fa fa-quote-left"></i>
                 <p>Skin Health: The antioxidants in matcha may help protect the skin from UV damage, improve skin elasticity, and promote a healthy complexion.</p>
-                <div class="rating">
+                <div class="rating" style="text-align: center;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                     <img src="imgs/image2.jpg" alt="This is a photo of a person.">
-                    <h3>Kristine</h3>
+                    <h3 style="padding-top: 10px;">Kristine</h3>
                 </div>
             </div>
             <div class="col-3">
                 <i class="fa fa-quote-left"></i>
                 <p>Brain Health: Matcha's combination of caffeine and L-theanine may support cognitive function, memory, and overall brain health.</p>
-                <div class="rating">
+                <div class="rating" style="text-align: center;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                     <img src="imgs/image4.jpg" alt="This is a photo of a person.">
-                    <h3>Rusell</h3>
+                    <h3 style="padding-top: 10px;">Rusell</h3>
                 </div>
             </div>
         </div>

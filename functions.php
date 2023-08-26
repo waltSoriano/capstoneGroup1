@@ -27,29 +27,42 @@ echo <<<EOT
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 	</head>
 	<body>
         <header>
-            <div class="contents">
-            <div class="brand">
-                <a href="index.php"><img src="imgs/Matcha.png" alt="" width="250"></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.php"><img src="imgs/Matcha.png" alt="" width="250"></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.php?page=products">Products</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="index.php?page=display_reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="index.php?page=FAQ">FAQ'S</a>
+              </li>
+            </ul>
+  
+            <div class="link-icons">
+                      <a href="welcome.php"><i class='bx bx-user'></i></a>
+                      <a href="index.php?page=cart">
+                          <i class="fas fa-shopping-cart"><span>$num_items_in_cart</span></i>
+                      </a>
             </div>
-                 
-                
-                <nav>
-                    <a href="index.php">Home</a>
-                    <a href="index.php?page=products">Products</a>
-                    <a href="index.php?page=display_reviews">Reviews</a>
-                    <a href="index.php?page=FAQ">FAQ'S</a>
-                </nav>
-                
-                <div class="link-icons">
-                    <a href="welcome.php"><i class='bx bx-user'></i></a>
-                    <a href="index.php?page=cart">
-						<i class="fas fa-shopping-cart"><span>$num_items_in_cart</span></i>
-					</a>
-                </div>
-            </div>
+          </div>
+        </div>
+      </nav>
         </header>
         <main>
 EOT;
